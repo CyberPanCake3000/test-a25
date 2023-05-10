@@ -16,8 +16,24 @@ class TransactionSeeder extends Seeder
         $transactions = [
             [
                 'employee_id' => 1,
-
+                'hours' => 3,
+                'status' => FALSE,
+            ],
+            [
+                'employee_id' => 2,
+                'hours' => 10,
+                'status' => TRUE,
+            ],
+            [
+                'employee_id' => 1,
+                'hours' => 6,
+                'status' => TRUE,
             ],
         ];
+
+        foreach ($transactions as $transaction)
+        {
+            Transaction::create($transaction);
+        }
     }
 }
