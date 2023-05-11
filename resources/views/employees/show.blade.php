@@ -1,5 +1,6 @@
 @extends('layout.main')
 
 @section('content')
-    here is employees page
+    <div>{{ $employee->id }}</div>
+    <div>{{ $employee->name }}</div>
 @endsection

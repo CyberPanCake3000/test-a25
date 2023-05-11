@@ -1,5 +1,8 @@
 @extends('layout.main')
 
 @section('content')
-    here is employee page
+    @foreach($employees as $employee)
+        <div>{{ $employee->id }}</div>
+        <div>{{ $employee->name }}</div>
+    @endforeach
 @endsection

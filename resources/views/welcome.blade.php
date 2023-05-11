@@ -1,7 +1,15 @@
 @extends('layout.main')
 
 @section('content')
-    here is welcome page
+    @foreach($employees as $employee)
+        <div>{{ $employee->id }}</div>
+        <div>{{ $employee->name }}</div>
+    @endforeach
+
+    @foreach($transactions as $transaction)
+        <div>{{ $transaction->id }}</div>
+        <div>{{ $transaction->status }}</div>
+    @endforeach
 @endsection
 
 
