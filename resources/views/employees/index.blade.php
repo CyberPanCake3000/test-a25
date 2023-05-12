@@ -5,4 +5,5 @@
         <div>{{ $employee->id }}</div>
         <div>{{ $employee->name }}</div>
     @endforeach
+    {{ $employees->links() }}
 @endsection

@@ -12,7 +12,7 @@ class TransactionController extends Controller
      */
     public function index()
     {
-        $transactions = Transaction::orderBy('updated_at', 'desc')->get();
+        $transactions = Transaction::orderBy('updated_at', 'desc')->paginate(10);
         return view('transactions/index', ["transactions" => $transactions]);
     }
 

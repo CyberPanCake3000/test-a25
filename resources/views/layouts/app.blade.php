@@ -31,11 +31,11 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('employees') }}">Сотрудники</a>
+                            <a class="nav-link" href="{{ route('employees') }}">{{ __('Сотрудники') }}</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('transactions') }}">Выплаты</a>
+                            <a class="nav-link" href="{{ route('transactions') }}">{{ __('Выплаты') }}</a>
                         </li>
                     </ul>
 

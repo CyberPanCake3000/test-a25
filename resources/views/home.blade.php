@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-12 col-md-7">
                 <div class="p-3 border">
-                    <h3>Сотрудники</h3>
+                    <h3>{{ __('Сотрудники') }}</h3>
                     <div>
                         <div class="row border-bottom">
                             <div class="col-1">ID</div>
@@ -25,7 +25,7 @@
 
             <div class="col-12 col-md-5">
                 <div class="p-3 border">
-                <h3>Транзакции</h3>
+                <h3>{{ __('Выплаты') }}</h3>
                     <div>
                         <div class="row border-bottom">
                             <div class="col-1">ID</div>
